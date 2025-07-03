@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>ModaTrend - Ropa y Complementos de Moda</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="moda, ropa, complementos, tienda online, tendencias" name="keywords">
+    <meta content="Tienda online de ropa y complementos de moda. Las últimas tendencias para ti." name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon-modatrend.ico" rel="icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+        .navbar-vertical {
+            background: #f8f9fa;
+        }
+        .navbar-vertical .nav-link {
+            color: #333;
+        }
+        .navbar-vertical .nav-link:hover {
+            background: #007bff;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Topbar -->
+    <div class="container-fluid bg-dark text-white py-2">
+        <div class="d-flex justify-content-between">
+            <div>
+                <small>¡Bienvenido a ModaTrend! Las últimas tendencias en ropa y complementos.</small>
+            </div>
+            <div>
+                <small><i class="fas fa-phone-alt"></i> +34 600 123 456 | <i class="fas fa-envelope"></i> contacto@modatrend.com</small>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar Principal -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+        <a class="navbar-brand font-weight-bold" href="#">ModaTrend</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar"
+            aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Tienda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenedor Principal -->
+    <div class="container-fluid mt-4">
+        <div class="row">
+
+            <!-- Navbar Vertical Categorías -->
+            <div class="col-lg-3 d-none d-lg-block">
+                <a class="btn shadow-none d-flex align-items-center justify-content-between bg-primary text-white w-100"
+                    data-toggle="collapse" href="#navbar-vertical" style="height: 65px; margin-top: -1px; padding: 0 30px;">
+                    <h6 class="m-0">Categorías</h6>
+                    <i class="fa fa-angle-down text-dark"></i>
+                </a>
+                <nav class="collapse show navbar navbar-vertical navbar-light align-items-start p-0 border border-top-0 border-bottom-0"
+                    id="navbar-vertical">
+                    <div class="navbar-nav w-100 overflow-hidden" style="height: 410px">
+                        <a href="#" class="nav-item nav-link">Vestidos</a>
+                        <a href="#" class="nav-item nav-link">Camisas</a>
+                        <a href="#" class="nav-item nav-link">Pantalones</a>
+                        <a href="#" class="nav-item nav-link">Complementos</a>
+                        <a href="#" class="nav-item nav-link">Zapatos</a>
+                        <a href="#" class="nav-item nav-link">Bolsos</a>
+                    </div>
+                </nav>
+            </div>
+
+            <!-- Contenido Principal -->
+            <div class="col-lg-9">
+                <div class="mb-4">
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1200&q=80"
+                        alt="Moda Trend" class="img-fluid rounded">
+                </div>
+
+                <h2 class="mb-3">Últimas tendencias en moda</h2>
+                <p>Descubre nuestra colección exclusiva de ropa y complementos de moda. Encuentra el estilo que te
+                    representa con prendas seleccionadas para ti, desde vestidos elegantes hasta accesorios únicos que
+                    marcan la diferencia.</p>
+
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=600&q=80"
+                                class="card-img-top" alt="Vestido">
+                            <div class="card-body">
+                                <h5 class="card-title">Vestidos</h5>
+                                <p class="card-text">Elegancia y estilo para cualquier ocasión.</p>
+                                <a href="#" class="btn btn-primary btn-sm">Ver colección</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="https://images.unsplash.com/photo-1521334884684-d80222895322?auto=format&fit=crop&w=600&q=80"
+                                class="card-img-top" alt="Complementos">
+                            <div class="card-body">
+                                <h5 class="card-title">Complementos</h5>
+                                <p class="card-text">Accesorios para destacar tu estilo único.</p>
+                                <a href="#" class="btn btn-primary btn-sm">Ver colección</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=600&q=80"
+                                class="card-img-top" alt="Zapatos">
+                            <div class="card-body">
+                                <h5 class="card-title">Zapatos</h5>
+                                <p class="card-text">Comodidad y tendencia en cada paso.</p>
+                                <a href="#" class="btn btn-primary btn-sm">Ver colección</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p class="mb-0">&copy; 2025 ModaTrend. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JS y dependencias -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
