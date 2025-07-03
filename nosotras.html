@@ -2,83 +2,101 @@
 <html lang="es">
 
 <head>
-    <meta charset="utf-8" />
-    <title>Sobre Nosotras - ModaTrend</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Conoce al equipo detrás de ModaTrend, tu tienda de ropa y complementos de moda." />
-    <link href="img/favicon-modatrend.ico" rel="icon" />
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet" />
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+    <meta charset="utf-8">
+    <title>Sobre Nosotras - Modas Maja</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="moda, ropa, complementos" name="keywords">
+    <meta content="Conoce la historia de Modas Maja" name="description">
+    <link href="img/favicon-modatrend.ico" rel="icon">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
+        :root {
+            --rosa-palo: #e8c7c8;
+            --rosa-intenso: #d88c8d;
+            --texto-oscuro: #4a4a4a;
+            --blanco: #ffffff;
+        }
+
         body {
             font-family: 'Open Sans', sans-serif;
-            background: #f8f9fa;
+            background-color: var(--blanco);
+            color: var(--texto-oscuro);
         }
 
-        .team-member {
-            margin-bottom: 2rem;
+        .navbar-light {
+            background-color: var(--rosa-palo) !important;
         }
 
-        .team-member img {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 50%;
+        .navbar-light .navbar-brand,
+        .navbar-light .navbar-nav .nav-link {
+            color: var(--texto-oscuro);
+        }
+
+        .navbar-light .navbar-nav .nav-link:hover,
+        .navbar-light .navbar-nav .nav-link.active {
+            color: var(--rosa-intenso);
+        }
+
+        footer {
+            background-color: var(--rosa-intenso);
         }
     </style>
 </head>
 
 <body>
-
-    <div class="container py-5">
-        <h1 class="mb-4 text-center">Sobre Nosotras</h1>
-
-        <p class="lead text-center mb-5">
-            ModaTrend nació con la pasión por la moda y el deseo de ofrecerte las últimas tendencias y complementos que te hagan sentir única y especial.
-        </p>
-
-        <div class="row justify-content-center mb-5">
-            <div class="col-md-8">
-                <img src="https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=900&q=80" alt="Equipo ModaTrend" class="img-fluid rounded shadow" />
+    <div class="container-fluid bg-dark text-white py-2">
+        <div class="d-flex justify-content-between">
+            <div>
+                <small>¡Bienvenida a Modas Maja!</small>
             </div>
-        </div>
-
-        <h2 class="mb-4 text-center">Nuestro Equipo</h2>
-        <div class="row justify-content-center">
-            <div class="col-md-4 team-member text-center">
-                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Laura García" />
-                <h5 class="mt-3">Laura García</h5>
-                <p>Fundadora & Diseñadora</p>
-                <p>Apasionada por la moda sostenible y las últimas tendencias, Laura lidera ModaTrend con creatividad y dedicación.</p>
+            <div>
+                <small><i class="fas fa-phone-alt"></i> 654321987 | <i class="fas fa-envelope"></i> modasmaja@gamil.com</small>
             </div>
-            <div class="col-md-4 team-member text-center">
-                <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="María López" />
-                <h5 class="mt-3">María López</h5>
-                <p>Marketing & Comunicación</p>
-                <p>Encargada de conectar ModaTrend con sus clientes y llevar la esencia de la marca al mundo digital.</p>
-            </div>
-            <div class="col-md-4 team-member text-center">
-                <img src="https://randomuser.me/api/portraits/women/55.jpg" alt="Ana Martínez" />
-                <p>Atención al Cliente</p>
-                <h5 class="mt-3">Ana Martínez</h5>
-                <p>Siempre lista para ayudarte con tus dudas y garantizar que tu experiencia de compra sea excepcional.</p>
-            </div>
-        </div>
-
-        <div class="text-center mt-5">
-            <a href="index.html" class="btn btn-primary">Volver al Inicio</a>
         </div>
     </div>
 
-    <!-- Bootstrap JS y dependencias -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top shadow-sm">
+        <a class="navbar-brand font-weight-bold" href="index.html">Modas Maja</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar"
+            aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Tienda</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="sobre-nosotras.html">Sobre Nosotras</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        <h2 class="mb-4">Sobre Nosotras</h2>
+        <p>En <strong>Modas Maja</strong> creemos que la moda no solo viste, sino que expresa quién eres. Somos un equipo
+            apasionado por el diseño, la calidad y el estilo. Nuestro objetivo es ofrecerte ropa y complementos que
+            resalten tu personalidad y te hagan sentir única.</p>
+        <p>Desde nuestros inicios, seleccionamos cuidadosamente cada prenda pensando en ti. Queremos que tu experiencia
+            con nosotras sea especial, desde el primer clic hasta que recibes tu pedido.</p>
+        <p>Gracias por formar parte de nuestra historia.</p>
+    </div>
+
+    <footer class="text-white text-center py-3">
+        <p class="mb-0">&copy; 2025 Modas Maja. Todos los derechos reservados.</p>
+    </footer>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
